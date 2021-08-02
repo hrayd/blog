@@ -1,9 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import useDarkMode from "use-dark-mode"
+import Toggle from "react-toggle"
+import "../toggle-style.css"
+import { DarkIcon, LightIcon } from "./toggle-icon"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
+  const darkMode = useDarkMode(false)
   let header
 
   if (isRootPath) {
@@ -22,7 +27,14 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header">
+        {header}
+        <Toggle
+          checked={darkMode.value}
+          onChange={darkMode.toggle}
+          icons={{ checked: <DarkIcon />, unchecked: <LightIcon /> }}
+        />
+      </header>
       <main>{children}</main>
       <footer>
         <a href="https://www.github.com/hrayd/">github</a>

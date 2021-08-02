@@ -252,10 +252,13 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-heading {
-  font-size: var(--fontSize-7);
+  font-size: var(--fontSize-6);
   margin: 0;
 }
 
@@ -270,7 +273,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }
@@ -330,4 +333,22 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.dark-mode {
+  color: white;
+  background: rgb(40, 44, 53);
+}
+
+/* prettier-ignore */
+.dark-mode h1,h2,h3,h4,h5,h6 {
+  color: rgb(255, 167, 196);
+}
+.dark-mode .post-list-item h2 {
+  color: rgb(255, 167, 196);
+}
+
+/* prettier-ignore */
+.light-mode h1,h2 {
+  color: var(--color-text);
 }
