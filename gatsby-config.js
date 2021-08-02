@@ -6,7 +6,7 @@ module.exports = {
       summary: `关于前端、音乐与生活`,
     },
     description: `佚树的个人博客`,
-    // siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://hrayd.github.io/`,
     // social: {
     //   twitter: `kylemathews`,
     // },
