@@ -8,7 +8,9 @@ import { DarkIcon, LightIcon } from "./toggle-icon"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(
+    window.localStorage.getItem("darkMode") === "true"
+  )
   let header
 
   if (isRootPath) {
