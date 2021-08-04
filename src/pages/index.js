@@ -4,10 +4,39 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import TagView from "../components/tag"
+
+const getTags = posts => {
+  const tSet = new Set()
+  posts.forEach(p => {
+    if (!p.frontmatter.tags) {
+      return
+    }
+    let tag = p.frontmatter.tags
+    if (tag.includes(",")) {
+      tag.split(",").forEach(t => tSet.add(t.trim()))
+    } else {
+      tSet.add(tag)
+    }
+  })
+  return Array.from(tSet)
+}
 
 const BlogIndex = ({ data, location }) => {
+  const [selectTags, setSelectTags] = React.useState([])
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+
+  const allTags = getTags(posts)
+
+  const onClickTag = React.useCallback(t => {
+    setSelectTags(prev => {
+      if (prev.includes(t)) return prev.filter(p => p !== t)
+      return [...prev, t]
+    })
+  }, [])
+
+  React.useEffect(() => setSelectTags(allTags), [posts])
 
   if (posts.length === 0) {
     return (
@@ -27,6 +56,17 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <div>
+        {allTags.map((t, index) => (
+          <TagView
+            key={t}
+            tag={t}
+            index={index}
+            onClick={() => onClickTag(t)}
+            selected={selectTags.includes(t)}
+          />
+        ))}
+      </div>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -82,6 +122,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }

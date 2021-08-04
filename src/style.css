@@ -352,3 +352,13 @@ a:focus {
 .light-mode h1,h2 {
   color: var(--color-text);
 }
+
+.tag-view {
+  display: inline-block;
+  margin-right: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}

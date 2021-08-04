@@ -2,6 +2,7 @@
 title: GTD之一：GTD的理论笔记
 date: "2021-03-09T22:00:00.000Z"
 description: "《Getting Things Done》的读书笔记"
+tags: 读书
 ---
 
 ## 引言
