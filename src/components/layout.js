@@ -8,7 +8,7 @@ import { DarkIcon, LightIcon } from "./toggle-icon"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode()
   let header
 
   React.useEffect(() => {
