@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  const allTags = getTags(posts)
+  const allTags = React.useMemo(() => getTags(posts), [posts])
 
   const onClickTag = React.useCallback(t => {
     setSelectTags(prev => {
@@ -46,13 +46,13 @@ const BlogIndex = ({ data, location }) => {
     })
   }, [])
 
-  React.useEffect(() => setSelectTags(allTags), [posts])
+  React.useEffect(() => setSelectTags(allTags), [allTags])
 
   const showPosts = React.useMemo(() => {
     if (!posts.length) return []
     if (allTags.length === selectTags.length) return posts
     return filterPosts(posts, selectTags)
-  }, [posts, selectTags])
+  }, [posts, selectTags, allTags])
 
   if (showPosts.length === 0) {
     return (
