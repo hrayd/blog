@@ -9,7 +9,14 @@ const TagView = ({ tag, index, onClick, selected }) => {
         border: "1px dashed lightgray",
       }
   return (
-    <div className="tag-view" style={style} onClick={onClick}>
+    <div
+      className="tag-view"
+      style={style}
+      onClick={onClick}
+      role="button"
+      onKeyPress={onClick}
+      tabIndex="0"
+    >
       {tag}
     </div>
   )

@@ -19,7 +19,7 @@ const Layout = ({ location, title, children }) => {
         darkMode.disable()
       }
     }
-  }, [])
+  }, [darkMode])
 
   if (isRootPath) {
     header = (

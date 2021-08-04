@@ -7,6 +7,7 @@ export const LightIcon = () => (
     height="16"
     role="presentation"
     style={{ pointerEvents: "none" }}
+    alt="light icon"
   />
 )
 
@@ -17,5 +18,6 @@ export const DarkIcon = () => (
     height="16"
     role="presentation"
     style={{ pointerEvents: "none" }}
+    alt="dark icon"
   ></img>
 )
