@@ -22,6 +22,16 @@ const getTags = posts => {
   return Array.from(tSet)
 }
 
+const filterPosts = (posts, tags) => {
+  return posts.filter(p => {
+    let t = p.frontmatter.tags
+    if (!t) return true
+    if (!t.includes(",")) return tags.includes(t)
+    t = t.split(",").map(tm => tm.trim())
+    return t.some(ts => tags.includes(ts))
+  })
+}
+
 const BlogIndex = ({ data, location }) => {
   const [selectTags, setSelectTags] = React.useState([])
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -38,7 +48,13 @@ const BlogIndex = ({ data, location }) => {
 
   React.useEffect(() => setSelectTags(allTags), [posts])
 
-  if (posts.length === 0) {
+  const showPosts = React.useMemo(() => {
+    if (!posts.length) return []
+    if (allTags.length === selectTags.length) return posts
+    return filterPosts(posts, selectTags)
+  }, [posts, selectTags])
+
+  if (showPosts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
@@ -68,7 +84,7 @@ const BlogIndex = ({ data, location }) => {
         ))}
       </div>
       <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+        {showPosts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
