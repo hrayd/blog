@@ -9,15 +9,20 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   const darkMode = useDarkMode()
+  const [defaultDarkMode, setDefaultDarkMode] = React.useState()
   let header
 
   React.useEffect(() => {
     if (window) {
       if (window.localStorage.getItem("darkMode") === "true") {
         darkMode.enable()
+        setDefaultDarkMode(true)
       } else {
         darkMode.disable()
+        setDefaultDarkMode(false)
       }
+    } else {
+      setDefaultDarkMode(false)
     }
   }, [darkMode])
 
@@ -39,11 +44,14 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">
         {header}
-        <Toggle
-          checked={darkMode.value}
-          onChange={darkMode.toggle}
-          icons={{ checked: <DarkIcon />, unchecked: <LightIcon /> }}
-        />
+        {defaultDarkMode === undefined ? null : (
+          <Toggle
+            checked={darkMode.value}
+            onChange={darkMode.toggle}
+            icons={{ checked: <DarkIcon />, unchecked: <LightIcon /> }}
+            defaultChecked={defaultDarkMode}
+          />
+        )}
       </header>
       <main>{children}</main>
       <footer>
