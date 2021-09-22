@@ -1,339 +1,547 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.53fb669f1e3cd4ed29f3.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.8fe766c483384575563d.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
 
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-bg-dark:#282c35;--color-text-dark:hsla(0,0%,100%,0.88);--color-heading-dark:#ffa7c4;--color-heading-black-dark:#fff}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1)}body.light-mode{color:var(--color-text)}body.dark-mode{color:var(--color-text-dark);background-color:var(--color-bg-dark)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2.light-mode,h3.light-mode,h4.light-mode,h5.light-mode,h6.light-mode{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h2.dark-mode,h3.dark-mode,h4.dark-mode,h5.dark-mode,h6.dark-mode{font-weight:var(--fontWeight-bold);color:var(--color-heading-dark)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-5)}h1.light{color:var(--color-heading-black)}h1.dark{color:var(--color-heading-black-dark)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12);display:flex;flex-direction:row;justify-content:space-between}.main-heading{font-size:var(--fontSize-5);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.tag-view{display:inline-block;margin-right:1rem;border-width:1px;border-style:solid;padding:0 .5rem;border-radius:3px;cursor:pointer}code[class*=language-],pre[class*=language-]{color:#000;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}.light-mode code[class*=language-],.light-mode pre[class*=language-]{color:#000;text-shadow:0 1px #fff}.dark-mode code[class*=language-],.dark-mode pre[class*=language-]{color:#f8f8f2;text-shadow:0 1px 0 1px rgba(0,0,0,.3)}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}.light-mode :not(pre)>code[class*=language-],.light-mode pre[class*=language-]{background:#f5f2f0}.dark-mode :not(pre)>code[class*=language-],.dark-mode pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.light-mode .token.comment,.token.cdata,.token.doctype,.token.prolog{color:#708090}.dark-mode .token.comment,.token.cdata,.token.doctype,.token.prolog{color:#8292a2}.light-mode .token.punctuation{color:#999}.dark-mode .token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.light-mode .token.property,.token.boolean,.token.constant,.token.deleted,.token.number,.token.symbol,.token.tag{color:#905}.dark-mode .token.property,.token.constant,.token.deleted,.token.symbol,.token.tag{color:#f92672}.dark-mode .token.boolean,.token.number{color:#ae81ff}.light-mode .token.selector,.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.string{color:#690}.dark-mode .token.selector,.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.string{color:#a6e22e}.language-css .token.string,.light-mode .token.operator,.style .token.string,.token.entity,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.dark-mode .token.operator,.language-css .token.string,.style .token.string,.token.entity,.token.url,.token.variable{color:#f8f8f2}.light-mode .token.atrule,.token.attr-value,.token.keyword{color:#07a}.light-mode .token.function,.token.class-name{color:#dd4a68}.dark-mode .token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.dark-mode .token.keyword{color:#66d9ef}.light-mode .token.regex,.token.important,.token.variable{color:#e90}.dark-mode .token.regex,.token.important{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.react-toggle{touch-action:pan-x;display:inline-block;position:relative;cursor:pointer;background-color:transparent;border:0;padding:0;-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}.react-toggle-screenreader-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.react-toggle--disabled{cursor:not-allowed;opacity:.5;transition:opacity .25s}.react-toggle-track{width:50px;height:24px;padding:0;border-radius:30px;background-color:#4d4d4d;transition:all .2s ease}.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track{background-color:#000}.react-toggle--checked .react-toggle-track{background-color:#19ab27}.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track{background-color:#128d15}.react-toggle-track-check{position:absolute;width:14px;height:10px;top:4px;margin-top:auto;margin-bottom:auto;line-height:0;left:8px;opacity:0;transition:opacity .25s ease}.react-toggle--checked .react-toggle-track-check,.react-toggle-track-x{opacity:1;transition:opacity .25s ease}.react-toggle-track-x{position:absolute;width:10px;height:10px;top:4px;margin-top:auto;margin-bottom:auto;line-height:0;right:10px}.react-toggle--checked .react-toggle-track-x{opacity:0}.react-toggle-thumb{transition:all .5s cubic-bezier(.23,1,.32,1) 0ms;position:absolute;top:1px;left:1px;width:22px;height:22px;border:1px solid #4d4d4d;border-radius:50%;background-color:#fafafa;box-sizing:border-box;transition:all .25s ease}.react-toggle--checked .react-toggle-thumb{left:27px;border-color:#19ab27}.react-toggle--focus .react-toggle-thumb{box-shadow:0 0 2px 3px #0099e0}.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb{box-shadow:0 0 5px 5px #0099e0}</style><meta name="generator" content="Gatsby 3.4.1"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=cb0348da83085f341829f81b843fa542" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cb0348da83085f341829f81b843fa542"/><title data-react-helmet="true">ES6+新特性扫盲 | 按太阳穴轮刮眼眶</title><meta data-react-helmet="true" name="description" content="ES6(ES2015) - ES2021新增特性概览"/><meta data-react-helmet="true" property="og:title" content="ES6+新特性扫盲"/><meta data-react-helmet="true" property="og:description" content="ES6(ES2015) - ES2021新增特性概览"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:title" content="ES6+新特性扫盲"/><meta data-react-helmet="true" name="twitter:description" content="ES6(ES2015) - ES2021新增特性概览"/><link as="script" rel="preload" href="/webpack-runtime-b6b5473299e7c9f504ce.js"/><link as="script" rel="preload" href="/framework-e954ed135b27c92e5196.js"/><link as="script" rel="preload" href="/app-065bd1c7906a1152e68e.js"/><link as="script" rel="preload" href="/commons-05ebe9de21711bd0a6d1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-97982a6270918782dbd4.js"/><link as="fetch" rel="preload" href="/page-data/es6+/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>!function(e,a,o){function d(e){document.body.classList.add(e?"dark-mode":"light-mode"),document.body.classList.remove(e?"light-mode":"dark-mode")}var t=window.matchMedia("(prefers-color-scheme: dark)"),r="(prefers-color-scheme: dark)"===t.media,s=null;try{s=localStorage.getItem("darkMode")}catch(e){}var c=null!==s;if(c&&(s=JSON.parse(s)),c)d(s);else if(r)d(t.matches),localStorage.setItem("darkMode",t.matches);else{var l=document.body.classList.contains("dark-mode");localStorage.setItem("darkMode",JSON.stringify(l))}}();</script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">按太阳穴轮刮眼眶</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">ES6+新特性扫盲</h1><p>September 11, 2021</p></header><section itemProp="articleBody"><h2>ES2021</h2>
-<h3>逻辑赋值运算符</h3>
-<p>类似于 <code class="language-text">+=</code> <code class="language-text">*=</code> 等运算符:</p>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-bg-dark:#282c35;--color-text-dark:hsla(0,0%,100%,0.88);--color-heading-dark:#ffa7c4;--color-heading-black-dark:#fff}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1)}body.light-mode{color:var(--color-text)}body.dark-mode{color:var(--color-text-dark);background-color:var(--color-bg-dark)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2.light-mode,h3.light-mode,h4.light-mode,h5.light-mode,h6.light-mode{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h2.dark-mode,h3.dark-mode,h4.dark-mode,h5.dark-mode,h6.dark-mode{font-weight:var(--fontWeight-bold);color:var(--color-heading-dark)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-5)}h1.light{color:var(--color-heading-black)}h1.dark{color:var(--color-heading-black-dark)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12);display:flex;flex-direction:row;justify-content:space-between}.main-heading{font-size:var(--fontSize-5);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}.tag-view{display:inline-block;margin-right:1rem;margin-bottom:.5rem;border-width:1px;border-style:solid;padding:0 .5rem;border-radius:3px;cursor:pointer}code[class*=language-],pre[class*=language-]{color:#000;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}.light-mode code[class*=language-],.light-mode pre[class*=language-]{color:#000;text-shadow:0 1px #fff}.dark-mode code[class*=language-],.dark-mode pre[class*=language-]{color:#f8f8f2;text-shadow:0 1px 0 1px rgba(0,0,0,.3)}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}.light-mode :not(pre)>code[class*=language-],.light-mode pre[class*=language-]{background:#f5f2f0}.dark-mode :not(pre)>code[class*=language-],.dark-mode pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.light-mode .token.comment,.token.cdata,.token.doctype,.token.prolog{color:#708090}.dark-mode .token.comment,.token.cdata,.token.doctype,.token.prolog{color:#8292a2}.light-mode .token.punctuation{color:#999}.dark-mode .token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.light-mode .token.property,.token.boolean,.token.constant,.token.deleted,.token.number,.token.symbol,.token.tag{color:#905}.dark-mode .token.property,.token.constant,.token.deleted,.token.symbol,.token.tag{color:#f92672}.dark-mode .token.boolean,.token.number{color:#ae81ff}.light-mode .token.selector,.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.string{color:#690}.dark-mode .token.selector,.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.string{color:#a6e22e}.language-css .token.string,.light-mode .token.operator,.style .token.string,.token.entity,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.dark-mode .token.operator,.language-css .token.string,.style .token.string,.token.entity,.token.url,.token.variable{color:#f8f8f2}.light-mode .token.atrule,.token.attr-value,.token.keyword{color:#07a}.light-mode .token.function,.token.class-name{color:#dd4a68}.dark-mode .token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.dark-mode .token.keyword{color:#66d9ef}.light-mode .token.regex,.token.important,.token.variable{color:#e90}.dark-mode .token.regex,.token.important{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.react-toggle{touch-action:pan-x;display:inline-block;position:relative;cursor:pointer;background-color:transparent;border:0;padding:0;-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}.react-toggle-screenreader-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.react-toggle--disabled{cursor:not-allowed;opacity:.5;transition:opacity .25s}.react-toggle-track{width:50px;height:24px;padding:0;border-radius:30px;background-color:#4d4d4d;transition:all .2s ease}.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track{background-color:#000}.react-toggle--checked .react-toggle-track{background-color:#19ab27}.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track{background-color:#128d15}.react-toggle-track-check{position:absolute;width:14px;height:10px;top:4px;margin-top:auto;margin-bottom:auto;line-height:0;left:8px;opacity:0;transition:opacity .25s ease}.react-toggle--checked .react-toggle-track-check,.react-toggle-track-x{opacity:1;transition:opacity .25s ease}.react-toggle-track-x{position:absolute;width:10px;height:10px;top:4px;margin-top:auto;margin-bottom:auto;line-height:0;right:10px}.react-toggle--checked .react-toggle-track-x{opacity:0}.react-toggle-thumb{transition:all .5s cubic-bezier(.23,1,.32,1) 0ms;position:absolute;top:1px;left:1px;width:22px;height:22px;border:1px solid #4d4d4d;border-radius:50%;background-color:#fafafa;box-sizing:border-box;transition:all .25s ease}.react-toggle--checked .react-toggle-thumb{left:27px;border-color:#19ab27}.react-toggle--focus .react-toggle-thumb{box-shadow:0 0 2px 3px #0099e0}.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb{box-shadow:0 0 5px 5px #0099e0}</style><meta name="generator" content="Gatsby 3.4.1"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=cb0348da83085f341829f81b843fa542" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cb0348da83085f341829f81b843fa542"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cb0348da83085f341829f81b843fa542"/><title data-react-helmet="true">ES6+新特性扫盲 | 按太阳穴轮刮眼眶</title><meta data-react-helmet="true" name="description" content="ES6(ES2015) - ES2021新增特性概览"/><meta data-react-helmet="true" property="og:title" content="ES6+新特性扫盲"/><meta data-react-helmet="true" property="og:description" content="ES6(ES2015) - ES2021新增特性概览"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:title" content="ES6+新特性扫盲"/><meta data-react-helmet="true" name="twitter:description" content="ES6(ES2015) - ES2021新增特性概览"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link as="script" rel="preload" href="/webpack-runtime-7448db38bbc0572cf7e1.js"/><link as="script" rel="preload" href="/framework-e954ed135b27c92e5196.js"/><link as="script" rel="preload" href="/app-6ee9d740e7016c9718ed.js"/><link as="script" rel="preload" href="/commons-05ebe9de21711bd0a6d1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-97982a6270918782dbd4.js"/><link as="fetch" rel="preload" href="/page-data/es6+/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>!function(e,a,o){function d(e){document.body.classList.add(e?"dark-mode":"light-mode"),document.body.classList.remove(e?"light-mode":"dark-mode")}var t=window.matchMedia("(prefers-color-scheme: dark)"),r="(prefers-color-scheme: dark)"===t.media,s=null;try{s=localStorage.getItem("darkMode")}catch(e){}var c=null!==s;if(c&&(s=JSON.parse(s)),c)d(s);else if(r)d(t.matches),localStorage.setItem("darkMode",t.matches);else{var l=document.body.classList.contains("dark-mode");localStorage.setItem("darkMode",JSON.stringify(l))}}();</script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">按太阳穴轮刮眼眶</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">ES6+新特性扫盲</h1><p>September 11, 2021</p></header><section itemProp="articleBody"><div class="table-of-contents">
 <ul>
-<li><code class="language-text">??=</code></li>
-<li><code class="language-text">&amp;&amp;=</code></li>
-<li><code class="language-text">||=</code></li>
+<li>
+<p><a href="#es2021">ES2021</a></p>
+<ul>
+<li><a href="#%E9%80%BB%E8%BE%91%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6">逻辑赋值运算符</a></li>
+<li><a href="#%E6%95%B0%E5%AD%97%E5%88%86%E9%9A%94%E7%AC%A6">数字分隔符</a></li>
+<li><a href="#promiseany">Promise.any()</a></li>
+<li><a href="#stringreplaceall">String.replaceAll()</a></li>
+<li><a href="#weakrefs-%E4%B8%8E-finalizationregistry">WeakRefs 与 FinalizationRegistry</a></li>
 </ul>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token keyword">null</span>
-a <span class="token operator">??=</span> <span class="token string">"flag"</span> <span class="token comment">// a = a ?? "flag"</span>
-a <span class="token operator">&amp;&amp;=</span> <span class="token string">"flag"</span> <span class="token comment">// a = a &amp;&amp; "flag"</span>
-a <span class="token operator">||=</span> <span class="token string">"falg"</span> <span class="token comment">// a = a || "flag"</span></code></pre></div>
-<h3>数字分隔符</h3>
-<p>允许在数字中间添加下划线 <code class="language-text">_</code> 增强可读性.</p>
+</li>
+<li>
+<p><a href="#es-2020">ES 2020</a></p>
+<ul>
+<li><a href="#%E9%93%BE%E5%BC%8F%E5%88%A4%E6%96%AD%E8%BF%90%E7%AE%97%E7%AC%A6-">链式判断运算符 <code>?.</code></a></li>
+<li><a href="#-%E8%BF%90%E7%AE%97%E7%AC%A6"><code>??</code> 运算符</a></li>
+<li><a href="#import-%E5%87%BD%E6%95%B0"><code>import()</code> 函数</a></li>
+<li><a href="#export--as-xx-from-somemodule"><code>export * as xx from "someModule"</code></a></li>
+<li><a href="#bigint-%E7%B1%BB%E5%9E%8B">BigInt 类型</a></li>
+<li><a href="#promiseallsettled">Promise.allSettled()</a></li>
+<li><a href="#stringmatchall">String.matchAll()</a></li>
+<li><a href="#globalthis">globalThis</a></li>
+<li><a href="#forin-%E5%AE%9A%E4%B9%89%E4%BA%86%E6%98%8E%E7%A1%AE%E7%9A%84%E9%A1%BA%E5%BA%8F"><code>for..in</code> 定义了明确的顺序</a></li>
+<li><a href="#importmeta">import.meta</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#es-2019">ES 2019</a></p>
+<ul>
+<li><a href="#stringtrimstart--stringtrimend">String.trimStart() / String.trimEnd()</a></li>
+<li><a href="#objectfromentries">Object.fromEntries()</a></li>
+<li><a href="#arrayflat--arrayflatmap">Array.flat() / Array.flatMap()</a></li>
+<li><a href="#catch-%E5%8F%82%E6%95%B0%E5%8F%AF%E7%9C%81%E7%95%A5">catch 参数可省略</a></li>
+<li><a href="#symboldescription">Symbol.description</a></li>
+<li><a href="#%E5%8A%A0%E5%BC%BA-jsonparse-%E4%B8%8E-jsonstringify">加强 JSON.parse() 与 JSON.stringify()</a></li>
+<li><a href="#arraysort%E6%9B%B4%E5%8A%A0%E7%A8%B3%E5%AE%9A">Array.sort()更加稳定</a></li>
+<li><a href="#functiontostring-%E9%87%8D%E6%96%B0%E4%BF%AE%E8%AE%A2">Function.toString() 重新修订</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#es-2018">ES 2018</a></p>
+<ul>
+<li><a href="#for-awaitof">for await...of</a></li>
+<li><a href="#promisefinally">Promise.finally()</a></li>
+<li><a href="#object-rest-properties">Object Rest Properties</a></li>
+<li><a href="#new-regexp-features">New RegExp Features</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#es-2017">ES 2017</a></p>
+<ul>
+<li><a href="#string-padding">String Padding</a></li>
+<li><a href="#objectentries">Object.entries()</a></li>
+<li><a href="#objectvalues">Object.values()</a></li>
+<li><a href="#async-functions">Async Functions</a></li>
+<li><a href="#objectgetownpropertydescriptor">Object.getOwnPropertyDescriptor()</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%B0%BE%E9%9A%8F%E9%80%97%E5%8F%B7">函数参数列表中的尾随逗号</a></li>
+<li><a href="#sharedarraybuffer-%E5%92%8C-atomics">SharedArrayBuffer 和 Atomics</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#es-2016">ES 2016</a></p>
+<ul>
+<li><a href="#%E6%B1%82%E5%B9%82%E8%BF%90%E7%AE%97%E7%AC%A6-">求幂运算符 **</a></li>
+<li><a href="#arrayincludes">Array.includes()</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#es6-es2015">ES6 (ES2015)</a></p>
+<ul>
+<li><a href="#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E7%B1%BB%E5%9E%8B">关键字和类型</a></li>
+<li><a href="#function">Function</a></li>
+<li><a href="#string">String</a></li>
+<li><a href="#array">Array</a></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#number">Number</a></li>
+<li><a href="#global-methods">Global Methods</a></li>
+<li><a href="#object">Object</a></li>
+<li><a href="#javascript-modules">JavaScript Modules</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="es2021" style="position:relative;"><a href="#es2021" aria-label="es2021 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES2021</h2>
+<h3 id="逻辑赋值运算符" style="position:relative;"><a href="#%E9%80%BB%E8%BE%91%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6" aria-label="逻辑赋值运算符 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>逻辑赋值运算符</h3>
+<p>类似于 <code>+=</code> <code>*=</code> 等运算符:</p>
+<ul>
+<li><code>??=</code></li>
+<li><code>&#x26;&#x26;=</code></li>
+<li><code>||=</code></li>
+</ul>
+<pre><code class="language-jsx">let a = null
+a ??= "flag" // a = a ?? "flag"
+a &#x26;&#x26;= "flag" // a = a &#x26;&#x26; "flag"
+a ||= "falg" // a = a || "flag"
+</code></pre>
+<h3 id="数字分隔符" style="position:relative;"><a href="#%E6%95%B0%E5%AD%97%E5%88%86%E9%9A%94%E7%AC%A6" aria-label="数字分隔符 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>数字分隔符</h3>
+<p>允许在数字中间添加下划线 <code>_</code> 增强可读性.</p>
 <p>不允许出现在数字的首尾位置.</p>
-<p>如: <code class="language-text">1_000_000</code></p>
+<p>如: <code>1_000_000</code></p>
 <p>注意: 带下划线的 String 类型的数字无法正常转换:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token function">Number</span><span class="token punctuation">(</span><span class="token number">1_000</span><span class="token punctuation">)</span> <span class="token comment">// 1000</span>
-<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"1_000"</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span></code></pre></div>
-<h3>Promise.any()</h3>
-<p>接收一个 Promise 数组, 返回第一个 <code class="language-text">fulfilled</code> 的 Promise 返回值.</p>
-<p>当所有的 Promise 都 <code class="language-text">rejected</code> 时, 进入 <code class="language-text">catch</code> 块并返回 <code class="language-text">AggregateError</code> 类型的错误.</p>
-<p>对比 Promise.race() 是返回第一个 <code class="language-text">fulfilled</code> 或 <code class="language-text">rejected</code> 的 Promise 返回值.</p>
-<h3>String.replaceAll()</h3>
-<p><code class="language-text">String.replace()</code> 只替换第一次匹配的字符</p>
-<h3>WeakRefs 与 FinalizationRegistry</h3>
+<pre><code class="language-jsx">Number(1_000) // 1000
+Number("1_000") // NaN
+</code></pre>
+<h3 id="promiseany" style="position:relative;"><a href="#promiseany" aria-label="promiseany permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promise.any()</h3>
+<p>接收一个 Promise 数组, 返回第一个 <code>fulfilled</code> 的 Promise 返回值.</p>
+<p>当所有的 Promise 都 <code>rejected</code> 时, 进入 <code>catch</code> 块并返回 <code>AggregateError</code> 类型的错误.</p>
+<p>对比 Promise.race() 是返回第一个 <code>fulfilled</code> 或 <code>rejected</code> 的 Promise 返回值.</p>
+<h3 id="stringreplaceall" style="position:relative;"><a href="#stringreplaceall" aria-label="stringreplaceall permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String.replaceAll()</h3>
+<p><code>String.replace()</code> 只替换第一次匹配的字符</p>
+<h3 id="weakrefs-与-finalizationregistry" style="position:relative;"><a href="#weakrefs-%E4%B8%8E-finalizationregistry" aria-label="weakrefs 与 finalizationregistry permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>WeakRefs 与 FinalizationRegistry</h3>
 <p>WeakRefs 为对象创建一个弱引用, 弱引用不会组织 JS 引擎垃圾回收期的回收, 一般很少使用.</p>
 <p>使用 FinalizationRegistry 对象可以在垃圾回收器回收对象时, 执行回调函数:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// 构建监听对象被垃圾回收器清除的回调</span>
-<span class="token keyword">const</span> registry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FinalizationRegistry</span><span class="token punctuation">(</span><span class="token parameter">heldValue</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"----"</span><span class="token punctuation">,</span> heldValue<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<pre><code class="language-jsx">// 构建监听对象被垃圾回收器清除的回调
+const registry = new FinalizationRegistry(heldValue => {
+  console.log("----", heldValue)
+})
 
-<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token keyword">const</span> token <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+const obj = {}
+const token = {}
 
-<span class="token comment">// 注册监听</span>
-registry<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">"obj deleted!"</span><span class="token punctuation">,</span> token<span class="token punctuation">)</span>
+// 注册监听
+registry.register(obj, "obj deleted!", token)
 
-<span class="token comment">// 取消监听</span>
-<span class="token comment">// registry.unregister(token);</span>
+// 取消监听
+// registry.unregister(token);
 
-<span class="token comment">// 可能很久以后，回调执行</span>
-<span class="token comment">// ---- obj deleted!</span></code></pre></div>
-<h2>ES 2020</h2>
-<h3>链式判断运算符 <code class="language-text">?.</code></h3>
-<p>支持 <code class="language-text">obj?.a?.b?.c</code> 运算, 当中间某个属性为 <code class="language-text">null</code> 或 <code class="language-text">undefined</code> 时, 直接返回 <code class="language-text">undefined</code> .</p>
-<p>同时支持 <code class="language-text">obj?.[expr]</code> 方括号形式与 <code class="language-text">fun?.(...args)</code> 函数调用形式.</p>
-<h3><code class="language-text">??</code> 运算符</h3>
-<p>类似于 <code class="language-text">||</code> , 但只有运算符左侧值为 <code class="language-text">null</code> 或 <code class="language-text">undefined</code> 时才返回右侧值.</p>
-<p>如 <code class="language-text">const username = list?.info?.base?.username ?? &#39;user&#39;;</code></p>
-<p>而 <code class="language-text">||</code> 运算符在左侧为 <code class="language-text">null</code> <code class="language-text">undefined</code> <code class="language-text">&#39;&#39;</code> <code class="language-text">false</code> 和 <code class="language-text">0</code> 时都会返回右侧值.</p>
-<h3><code class="language-text">import()</code> 函数</h3>
-<p>之前的 <code class="language-text">import</code> 只能用在模块顶层, 无法支持动态加载或条件导入模块.</p>
-<p><code class="language-text">import()</code> 函数支持动态加载模块, 返回一个 <code class="language-text">Promise</code> :</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">if</span> <span class="token punctuation">(</span>page <span class="token operator">===</span> <span class="token string">"home"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">"./home.js"</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> export1<span class="token punctuation">,</span> export2 <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-      <span class="token comment">// 加载成功</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-      <span class="token comment">// 加载失败</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre></div>
+// 可能很久以后，回调执行
+// ---- obj deleted!
+</code></pre>
+<h2 id="es-2020" style="position:relative;"><a href="#es-2020" aria-label="es 2020 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES 2020</h2>
+<h3 id="链式判断运算符-" style="position:relative;"><a href="#%E9%93%BE%E5%BC%8F%E5%88%A4%E6%96%AD%E8%BF%90%E7%AE%97%E7%AC%A6-" aria-label="链式判断运算符  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>链式判断运算符 <code>?.</code></h3>
+<p>支持 <code>obj?.a?.b?.c</code> 运算, 当中间某个属性为 <code>null</code> 或 <code>undefined</code> 时, 直接返回 <code>undefined</code> .</p>
+<p>同时支持 <code>obj?.[expr]</code> 方括号形式与 <code>fun?.(...args)</code> 函数调用形式.</p>
+<h3 id="-运算符" style="position:relative;"><a href="#-%E8%BF%90%E7%AE%97%E7%AC%A6" aria-label=" 运算符 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>??</code> 运算符</h3>
+<p>类似于 <code>||</code> , 但只有运算符左侧值为 <code>null</code> 或 <code>undefined</code> 时才返回右侧值.</p>
+<p>如 <code>const username = list?.info?.base?.username ?? 'user';</code></p>
+<p>而 <code>||</code> 运算符在左侧为 <code>null</code> <code>undefined</code> <code>''</code> <code>false</code> 和 <code>0</code> 时都会返回右侧值.</p>
+<h3 id="import-函数" style="position:relative;"><a href="#import-%E5%87%BD%E6%95%B0" aria-label="import 函数 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>import()</code> 函数</h3>
+<p>之前的 <code>import</code> 只能用在模块顶层, 无法支持动态加载或条件导入模块.</p>
+<p><code>import()</code> 函数支持动态加载模块, 返回一个 <code>Promise</code> :</p>
+<pre><code class="language-jsx">if (page === "home") {
+  import("./home.js")
+    .then(({ export1, export2 }) => {
+      // 加载成功
+    })
+    .catch(err => {
+      // 加载失败
+    })
+}
+</code></pre>
 <p>适用于:</p>
 <ul>
 <li>按需加载(如点击某按钮)</li>
 <li>条件加载</li>
 <li>动态的模块路径</li>
 </ul>
-<h3><code class="language-text">export * as xx from &quot;someModule&quot;</code></h3>
+<h3 id="export--as-xx-from-somemodule" style="position:relative;"><a href="#export--as-xx-from-somemodule" aria-label="export  as xx from somemodule permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>export * as xx from "someModule"</code></h3>
 <p>相当于以下两个语句:</p>
 <ul>
-<li><code class="language-text">import * as xx from &quot;someModule&quot;;</code></li>
-<li><code class="language-text">export {xx};</code></li>
+<li><code>import * as xx from "someModule";</code></li>
+<li><code>export {xx};</code></li>
 </ul>
-<h3>BigInt 类型</h3>
-<p>可精确表示任意位数的整数, BigInt 类型的数据需要添加后缀 <code class="language-text">n</code> .</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> n <span class="token operator">=</span> <span class="token number">34242345425325n</span>
-<span class="token keyword">typeof</span> n <span class="token comment">// "bigint"</span>
-<span class="token comment">// 作为构造函数</span>
-<span class="token function">BigInt</span><span class="token punctuation">(</span><span class="token number">3243</span><span class="token punctuation">)</span> <span class="token comment">// 3243n</span>
-<span class="token function">BigInt</span><span class="token punctuation">(</span><span class="token string">"324"</span><span class="token punctuation">)</span> <span class="token comment">// 324n</span>
-<span class="token function">BigInt</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 0n</span>
-<span class="token function">BigInt</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 1n</span></code></pre></div>
-<h3>Promise.allSettled()</h3>
-<p>接收一组 Promise 实例作为参数, 当这些 Promise 都返回结果, 无论是 <code class="language-text">fulfilled</code> 还是 <code class="language-text">rejected</code> , 状态都会变为 <code class="language-text">fulfilled</code> , 返回 <code class="language-text">[{ status: &quot;fulfilled&quot; | &quot;rejected&quot;, value?: any, reason?: any }]</code></p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> resolved <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">42</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> rejected <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+<h3 id="bigint-类型" style="position:relative;"><a href="#bigint-%E7%B1%BB%E5%9E%8B" aria-label="bigint 类型 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>BigInt 类型</h3>
+<p>可精确表示任意位数的整数, BigInt 类型的数据需要添加后缀 <code>n</code> .</p>
+<pre><code class="language-jsx">const n = 34242345425325n
+typeof n // "bigint"
+// 作为构造函数
+BigInt(3243) // 3243n
+BigInt("324") // 324n
+BigInt(false) // 0n
+BigInt(true) // 1n
+</code></pre>
+<h3 id="promiseallsettled" style="position:relative;"><a href="#promiseallsettled" aria-label="promiseallsettled permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promise.allSettled()</h3>
+<p>接收一组 Promise 实例作为参数, 当这些 Promise 都返回结果, 无论是 <code>fulfilled</code> 还是 <code>rejected</code> , 状态都会变为 <code>fulfilled</code> , 返回 <code>[{ status: "fulfilled" | "rejected", value?: any, reason?: any }]</code></p>
+<pre><code class="language-jsx">const resolved = Promise.resolve(42)
+const rejected = Promise.reject(-1)
 
-<span class="token keyword">const</span> allSettledPromise <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">allSettled</span><span class="token punctuation">(</span><span class="token punctuation">[</span>resolved<span class="token punctuation">,</span> rejected<span class="token punctuation">]</span><span class="token punctuation">)</span>
+const allSettledPromise = Promise.allSettled([resolved, rejected])
 
-allSettledPromise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">results</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token comment">// [</span>
-<span class="token comment">//    { status: 'fulfilled', value: 42 },</span>
-<span class="token comment">//    { status: 'rejected', reason: -1 }</span>
-<span class="token comment">// ]</span></code></pre></div>
+allSettledPromise.then(function (results) {
+  console.log(results)
+})
+// [
+//    { status: 'fulfilled', value: 42 },
+//    { status: 'rejected', reason: -1 }
+// ]
+</code></pre>
 <p><a href="https://www.notion.so/0c758a80f21045159ebd28652c288c05">Promise.allSettled(), Promise.all(), Promise.race()</a></p>
-<h3>String.matchAll()</h3>
+<h3 id="stringmatchall" style="position:relative;"><a href="#stringmatchall" aria-label="stringmatchall permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String.matchAll()</h3>
 <p>返回一个正则表达式在当前字符串中的所有匹配.</p>
-<p>返回一个迭代器, 可以使用 <code class="language-text">for..of</code> 遍历或使用 <code class="language-text">Array.from()</code> 转为数组遍历.</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> regex <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">t(e)(st(\d?))</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
-<span class="token keyword">let</span> string <span class="token operator">=</span> <span class="token string">"test1test2test3"</span>
-<span class="token keyword">let</span> r <span class="token operator">=</span> string<span class="token punctuation">.</span><span class="token function">matchAll</span><span class="token punctuation">(</span>regex<span class="token punctuation">)</span>
-Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span>
-<span class="token comment">// [["test1", "e", "str1", "1"],</span>
-<span class="token comment">//  ["test2", "e", "str2", "2"],</span>
-<span class="token comment">//  ["test3", "e", "str3", "3"]]</span></code></pre></div>
-<h3>globalThis</h3>
-<p>全局属性 <code class="language-text">globalThis</code> 包含全局的 <code class="language-text">this</code> 对象.</p>
-<p>以前在不同环境下获取全局 <code class="language-text">this</code> 对象的方法各不相同, 如:</p>
+<p>返回一个迭代器, 可以使用 <code>for..of</code> 遍历或使用 <code>Array.from()</code> 转为数组遍历.</p>
+<pre><code class="language-jsx">let regex = /t(e)(st(\d?))/g
+let string = "test1test2test3"
+let r = string.matchAll(regex)
+Array.from(r)
+// [["test1", "e", "str1", "1"],
+//  ["test2", "e", "str2", "2"],
+//  ["test3", "e", "str3", "3"]]
+</code></pre>
+<h3 id="globalthis" style="position:relative;"><a href="#globalthis" aria-label="globalthis permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>globalThis</h3>
+<p>全局属性 <code>globalThis</code> 包含全局的 <code>this</code> 对象.</p>
+<p>以前在不同环境下获取全局 <code>this</code> 对象的方法各不相同, 如:</p>
 <ul>
-<li>在 Web 中通过 <code class="language-text">window</code> 或 <code class="language-text">self</code> 获取 <code class="language-text">this</code></li>
-<li>在 WebWorkers 中只能通过 <code class="language-text">self</code> 获取 <code class="language-text">this</code></li>
-<li>在 Nodejs 中需要使用 <code class="language-text">global</code> 获取 <code class="language-text">this</code></li>
+<li>在 Web 中通过 <code>window</code> 或 <code>self</code> 获取 <code>this</code></li>
+<li>在 WebWorkers 中只能通过 <code>self</code> 获取 <code>this</code></li>
+<li>在 Nodejs 中需要使用 <code>global</code> 获取 <code>this</code></li>
 </ul>
-<p>需要通过判断各种对象是否存在来获取 <code class="language-text">this</code>, 较为繁琐.</p>
-<p><code class="language-text">globalThis</code> 提供了一个标准方式来获取全局 <code class="language-text">this</code> , 在各种环境下都适用.</p>
-<h3><code class="language-text">for..in</code> 定义了明确的顺序</h3>
-<p><code class="language-text">for (x in y)</code> 语句将以规定的顺序执行.</p>
-<h3>import.meta</h3>
-<p>返回带有 <code class="language-text">url</code> 属性的对象, 可获取模块的基础 URL.</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token punctuation">;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<p>需要通过判断各种对象是否存在来获取 <code>this</code>, 较为繁琐.</p>
+<p><code>globalThis</code> 提供了一个标准方式来获取全局 <code>this</code> , 在各种环境下都适用.</p>
+<h3 id="forin-定义了明确的顺序" style="position:relative;"><a href="#forin-%E5%AE%9A%E4%B9%89%E4%BA%86%E6%98%8E%E7%A1%AE%E7%9A%84%E9%A1%BA%E5%BA%8F" aria-label="forin 定义了明确的顺序 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>for..in</code> 定义了明确的顺序</h3>
+<p><code>for (x in y)</code> 语句将以规定的顺序执行.</p>
+<h3 id="importmeta" style="position:relative;"><a href="#importmeta" aria-label="importmeta permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>import.meta</h3>
+<p>返回带有 <code>url</code> 属性的对象, 可获取模块的基础 URL.</p>
+<pre><code class="language-jsx">;&#x3C;script type="module" src="module.js">&#x3C;/script>
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">)</span> <span class="token comment">// { url: "file:///home/user/module.js" }</span></code></pre></div>
-<h2>ES 2019</h2>
-<h3>String.trimStart() / String.trimEnd()</h3>
+console.log(import.meta) // { url: "file:///home/user/module.js" }
+</code></pre>
+<h2 id="es-2019" style="position:relative;"><a href="#es-2019" aria-label="es 2019 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES 2019</h2>
+<h3 id="stringtrimstart--stringtrimend" style="position:relative;"><a href="#stringtrimstart--stringtrimend" aria-label="stringtrimstart  stringtrimend permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String.trimStart() / String.trimEnd()</h3>
 <p>单独去掉 String 头或尾部的空白字符.</p>
-<h3>Object.fromEntries()</h3>
-<p>即 <code class="language-text">Object.entries()</code> 的逆过程, 将 <code class="language-text">[[key, value]]</code> 形式的键值对转为对象结构:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">"aa"</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">40</span> <span class="token punctuation">}</span>
-<span class="token keyword">let</span> entries <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
-entries <span class="token comment">// [["a", "aa"], ["b", 40]]</span>
-<span class="token keyword">let</span> obj1 <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">fromEntries</span><span class="token punctuation">(</span>entries<span class="token punctuation">)</span>
-obj1 <span class="token comment">// {a: "aa", b: 40}</span></code></pre></div>
-<h3>Array.flat() / Array.flatMap()</h3>
+<h3 id="objectfromentries" style="position:relative;"><a href="#objectfromentries" aria-label="objectfromentries permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object.fromEntries()</h3>
+<p>即 <code>Object.entries()</code> 的逆过程, 将 <code>[[key, value]]</code> 形式的键值对转为对象结构:</p>
+<pre><code class="language-jsx">let obj = { a: "aa", b: 40 }
+let entries = Object.entries(obj)
+entries // [["a", "aa"], ["b", 40]]
+let obj1 = Object.fromEntries(entries)
+obj1 // {a: "aa", b: 40}
+</code></pre>
+<h3 id="arrayflat--arrayflatmap" style="position:relative;"><a href="#arrayflat--arrayflatmap" aria-label="arrayflat  arrayflatmap permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array.flat() / Array.flatMap()</h3>
 <ul>
 <li>
 <p>Array.flat([depth = 1]) 按照指定深度展开/铺平数组, 默认深度为 1</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-arr1<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// [1,2,3,4]</span>
-<span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-arr2<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// [1,2,[3,4]]</span>
-arr2<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// [1,2,3,4]</span></code></pre></div>
+<pre><code class="language-jsx">const arr1 = [1, 2, [3, 4]]
+arr1.flat() // [1,2,3,4]
+const arr2 = [1, 2, [[[3, 4]]]]
+arr2.flat(2) // [1,2,[3,4]]
+arr2.flat(3) // [1,2,3,4]
+</code></pre>
 </li>
 <li>
-<p>Array.flatMap() 即 <code class="language-text">Array.map()</code> + <code class="language-text">Array.flat(1)</code></p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"it's Sunny in"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">"California"</span><span class="token punctuation">]</span>
+<p>Array.flatMap() 即 <code>Array.map()</code> + <code>Array.flat(1)</code></p>
+<pre><code class="language-jsx">let arr1 = ["it's Sunny in", "", "California"]
 
-arr1<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=></span> x<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment">// [["it's","Sunny","in"],[""],["California"]]</span>
+arr1.map(x => x.split(" "))
+// [["it's","Sunny","in"],[""],["California"]]
 
-arr1<span class="token punctuation">.</span><span class="token function">flatMap</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=></span> x<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment">// ["it's","Sunny","in", "", "California"]</span></code></pre></div>
+arr1.flatMap(x => x.split(" "))
+// ["it's","Sunny","in", "", "California"]
+</code></pre>
 </li>
 </ul>
-<h3>catch 参数可省略</h3>
-<p>支持语法 <code class="language-text">try {...} catch {...}</code> .</p>
-<h3>Symbol.description</h3>
+<h3 id="catch-参数可省略" style="position:relative;"><a href="#catch-%E5%8F%82%E6%95%B0%E5%8F%AF%E7%9C%81%E7%95%A5" aria-label="catch 参数可省略 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>catch 参数可省略</h3>
+<p>支持语法 <code>try {...} catch {...}</code> .</p>
+<h3 id="symboldescription" style="position:relative;"><a href="#symboldescription" aria-label="symboldescription permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Symbol.description</h3>
 <p>获取 Symbol 对象创建时的描述信息:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> symbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">"This is a symbol"</span><span class="token punctuation">)</span>
-symbol <span class="token comment">// Symbol(This is a symbol)</span>
-symbol<span class="token punctuation">.</span>description <span class="token comment">// "This is a symbol"</span></code></pre></div>
-<h3>加强 JSON.parse() 与 JSON.stringify()</h3>
-<p>之前 JSON 字符串中包含行分隔符 <code class="language-text">\u2028</code> 或 段落分隔符 <code class="language-text">\u2029</code> 时, 调用 <code class="language-text">JSON.parse()</code> 解析会报错, 修复了这个错误.</p>
-<p>之前对于无效的 UTF-16 字符编码, <code class="language-text">JSON.stringify()</code> 会被替换为无意义的特殊字符, 现在修复了这个错误:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token string">"\uD83D"</span><span class="token punctuation">)</span>
-<span class="token comment">// 之前: '"�"'</span>
-<span class="token comment">// 目前: '"\\ud83d"'</span></code></pre></div>
-<h3>Array.sort()更加稳定</h3>
+<pre><code class="language-jsx">const symbol = Symbol("This is a symbol")
+symbol // Symbol(This is a symbol)
+symbol.description // "This is a symbol"
+</code></pre>
+<h3 id="加强-jsonparse-与-jsonstringify" style="position:relative;"><a href="#%E5%8A%A0%E5%BC%BA-jsonparse-%E4%B8%8E-jsonstringify" aria-label="加强 jsonparse 与 jsonstringify permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>加强 JSON.parse() 与 JSON.stringify()</h3>
+<p>之前 JSON 字符串中包含行分隔符 <code>\u2028</code> 或 段落分隔符 <code>\u2029</code> 时, 调用 <code>JSON.parse()</code> 解析会报错, 修复了这个错误.</p>
+<p>之前对于无效的 UTF-16 字符编码, <code>JSON.stringify()</code> 会被替换为无意义的特殊字符, 现在修复了这个错误:</p>
+<pre><code class="language-jsx">JSON.stringify("\uD83D")
+// 之前: '"�"'
+// 目前: '"\\ud83d"'
+</code></pre>
+<h3 id="arraysort更加稳定" style="position:relative;"><a href="#arraysort%E6%9B%B4%E5%8A%A0%E7%A8%B3%E5%AE%9A" aria-label="arraysort更加稳定 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array.sort()更加稳定</h3>
 <p>之前的规范允许不稳定的排序算法如快排, 目前主流浏览器都使用稳定的排序算法, 对于传入的比较算法计算结果等于 0 的情况也能保持顺序稳定.</p>
-<h3>Function.toString() 重新修订</h3>
-<p>之前的 <code class="language-text">Function.toString()</code> 只返回函数主体, 丢失了原始的注释和空格等信息.</p>
-<p>现在 <code class="language-text">Function.toString()</code> 返回的结果与函数编写的一致.</p>
-<h2>ES 2018</h2>
-<h3>for await…of</h3>
+<h3 id="functiontostring-重新修订" style="position:relative;"><a href="#functiontostring-%E9%87%8D%E6%96%B0%E4%BF%AE%E8%AE%A2" aria-label="functiontostring 重新修订 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function.toString() 重新修订</h3>
+<p>之前的 <code>Function.toString()</code> 只返回函数主体, 丢失了原始的注释和空格等信息.</p>
+<p>现在 <code>Function.toString()</code> 返回的结果与函数编写的一致.</p>
+<h2 id="es-2018" style="position:relative;"><a href="#es-2018" aria-label="es 2018 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES 2018</h2>
+<h3 id="for-awaitof" style="position:relative;"><a href="#for-awaitof" aria-label="for awaitof permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>for await...of</h3>
 <p>用于遍历异步可迭代对象(也可遍历同步可迭代对象).</p>
-<p>需要放在 <code class="language-text">async function</code> 内部.</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// 一个异步可迭代对象</span>
-<span class="token keyword">const</span> asyncIterable <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>asyncIterator<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      i<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-      <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>i<span class="token operator">++</span><span class="token punctuation">,</span> done<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
+<p>需要放在 <code>async function</code> 内部.</p>
+<pre><code class="language-jsx">// 一个异步可迭代对象
+const asyncIterable = {
+  [Symbol.asyncIterator]() {
+    return {
+      i: 0,
+      next() {
+        if (this.i &#x3C; 3) {
+          return Promise.resolve({ value: this.i++, done: false })
+        }
 
-        <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span> done<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token comment">// 遍历异步可迭代对象</span>
-<span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">for</span> <span class="token keyword">await</span> <span class="token punctuation">(</span>n <span class="token keyword">of</span> asyncIterable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<h3>Promise.finally()</h3>
+        return Promise.resolve({ done: true })
+      },
+    }
+  },
+}
+// 遍历异步可迭代对象
+;(async function () {
+  for await (n of asyncIterable) {
+    console.log(n)
+  }
+})()
+</code></pre>
+<h3 id="promisefinally" style="position:relative;"><a href="#promisefinally" aria-label="promisefinally permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promise.finally()</h3>
 <p>当 Promise 执行结束时, 无论结果是 fulfilled 还是 rejected, 都会执行 finally 回调.</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
-	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
-	<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
-	<span class="token punctuation">.</span><span class="token function">finally</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<h3>Object Rest Properties</h3>
+<pre><code class="language-jsx">new Promise(...)
+    .then(...)
+    .catch(...)
+    .finally(...);
+</code></pre>
+<h3 id="object-rest-properties" style="position:relative;"><a href="#object-rest-properties" aria-label="object rest properties permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object Rest Properties</h3>
 <p>对象剩余属性:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">"aa"</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> c<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> d<span class="token operator">:</span> <span class="token string">""</span> <span class="token punctuation">}</span>
-<span class="token keyword">let</span> <span class="token punctuation">{</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> <span class="token operator">...</span>others <span class="token punctuation">}</span> <span class="token operator">=</span> obj
-a <span class="token comment">// "aa"</span>
-b <span class="token comment">// 30</span>
-others <span class="token comment">// { c: true, d: "" }</span></code></pre></div>
-<h3>New RegExp Features</h3>
+<pre><code class="language-jsx">let obj = { a: "aa", b: 30, c: true, d: "" }
+let { a, b, ...others } = obj
+a // "aa"
+b // 30
+others // { c: true, d: "" }
+</code></pre>
+<h3 id="new-regexp-features" style="position:relative;"><a href="#new-regexp-features" aria-label="new regexp features permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New RegExp Features</h3>
 <p>新增 4 个 RegExp 新特性:</p>
 <ul>
-<li>Unicode 属性转义 <code class="language-text">\p{...}</code></li>
-<li>后行断言(lookbehind assertion) <code class="language-text">(?&lt;=...)</code> <code class="language-text">(?&lt;!)</code></li>
-<li>可命名捕获组 <code class="language-text">(?&lt;name&gt;...)</code></li>
-<li>s (dotAll) Flag, 使用 <code class="language-text">s</code> 标志激活 <code class="language-text">.</code> 字符匹配任意一个字符(dotAll 模式)</li>
+<li>Unicode 属性转义 <code>\p{...}</code></li>
+<li>后行断言(lookbehind assertion) <code>(?&#x3C;=...)</code> <code>(?&#x3C;!)</code></li>
+<li>可命名捕获组 <code>(?&#x3C;name>...)</code></li>
+<li>s (dotAll) Flag, 使用 <code>s</code> 标志激活 <code>.</code> 字符匹配任意一个字符(dotAll 模式)</li>
 </ul>
-<h2>ES 2017</h2>
-<h3>String Padding</h3>
+<h2 id="es-2017" style="position:relative;"><a href="#es-2017" aria-label="es 2017 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES 2017</h2>
+<h3 id="string-padding" style="position:relative;"><a href="#string-padding" aria-label="string padding permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String Padding</h3>
 <p>使用另一个字符串(重复)填充当前字符串, 以达到指定长度</p>
 <ul>
-<li><code class="language-text">padStart</code> 左侧填充</li>
-<li><code class="language-text">padEnd</code> 右侧填充</li>
+<li><code>padStart</code> 左侧填充</li>
+<li><code>padEnd</code> 右侧填充</li>
 </ul>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token string">"abc"</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token comment">// "       abc", 默认填充空格</span>
-<span class="token string">"abc"</span><span class="token punctuation">.</span><span class="token function">padEnd</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token comment">// "abc       ", 右侧填充</span>
-<span class="token string">"abc"</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token string">"foo"</span><span class="token punctuation">)</span> <span class="token comment">// "foofoofabc", 用指定字符重复填充</span>
-<span class="token string">"abc"</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token string">"12345"</span><span class="token punctuation">)</span> <span class="token comment">// "12abc", 多余字符丢弃</span>
-<span class="token string">"abc"</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// "abc", 若长度小于当前字符串则不变</span></code></pre></div>
-<h3>Object.entries()</h3>
+<pre><code class="language-jsx">"abc".padStart(10) // "       abc", 默认填充空格
+"abc".padEnd(10) // "abc       ", 右侧填充
+"abc".padStart(10, "foo") // "foofoofabc", 用指定字符重复填充
+"abc".padStart(5, "12345") // "12abc", 多余字符丢弃
+"abc".padStart(2) // "abc", 若长度小于当前字符串则不变
+</code></pre>
+<h3 id="objectentries" style="position:relative;"><a href="#objectentries" aria-label="objectentries permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object.entries()</h3>
 <p>返回对象自身(不包括原型链)可枚举属性的键值对数组:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// [['a', 'aaa'], ['b', 20]]</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> value<span class="token punctuation">]</span> <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre></div>
-<p>与 <code class="language-text">for..in</code> 循环的顺序一致, 但 <code class="language-text">for..in</code> 循环会枚举原型链中的属性.</p>
-<h3>Object.values()</h3>
+<pre><code class="language-jsx">let o = { a: "aaa", b: 20 }
+console.log(Object.entries(o)) // [['a', 'aaa'], ['b', 20]]
+for (let [key, value] of Object.entries(o)) {
+  console.log(`${key}: ${value}`)
+}
+</code></pre>
+<p>与 <code>for..in</code> 循环的顺序一致, 但 <code>for..in</code> 循环会枚举原型链中的属性.</p>
+<h3 id="objectvalues" style="position:relative;"><a href="#objectvalues" aria-label="objectvalues permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object.values()</h3>
 <p>返回对象自身的所有可枚举属性值的数组:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">let</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// ["aaa", 20]</span></code></pre></div>
-<h3>Async Functions</h3>
-<p>使用 <code class="language-text">async</code> <code class="language-text">await</code> 关键字更简洁地书写基于 <code class="language-text">Promise</code> 的异步行为.</p>
-<h3>Object.getOwnPropertyDescriptor()</h3>
+<pre><code class="language-jsx">let o = { a: "aaa", b: 20 }
+console.log(Object.values(o)) // ["aaa", 20]
+</code></pre>
+<h3 id="async-functions" style="position:relative;"><a href="#async-functions" aria-label="async functions permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Async Functions</h3>
+<p>使用 <code>async</code> <code>await</code> 关键字更简洁地书写基于 <code>Promise</code> 的异步行为.</p>
+<h3 id="objectgetownpropertydescriptor" style="position:relative;"><a href="#objectgetownpropertydescriptor" aria-label="objectgetownpropertydescriptor permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object.getOwnPropertyDescriptor()</h3>
 <p>获取对象的一个自有属性的属性描述符:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">"aaa"</span> <span class="token punctuation">}</span>
-Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptor</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">"a"</span><span class="token punctuation">)</span>
-<span class="token comment">// {value: 'aaa', writable: true, enumerable: true, configurable: true}</span></code></pre></div>
-<h3>函数参数列表中的尾随逗号</h3>
+<pre><code class="language-jsx">const obj = { a: "aaa" }
+Object.getOwnPropertyDescriptor(obj, "a")
+// {value: 'aaa', writable: true, enumerable: true, configurable: true}
+</code></pre>
+<h3 id="函数参数列表中的尾随逗号" style="position:relative;"><a href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%B0%BE%E9%9A%8F%E9%80%97%E5%8F%B7" aria-label="函数参数列表中的尾随逗号 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>函数参数列表中的尾随逗号</h3>
 <p>允许在函数声明和函数调用的参数列表中使用尾随逗号:</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> <span class="token function-variable function">func</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">v1<span class="token punctuation">,</span> v2<span class="token punctuation">,</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token function">func</span><span class="token punctuation">(</span><span class="token string">"t1"</span><span class="token punctuation">,</span> <span class="token string">"t2"</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<pre><code class="language-jsx">const func = (v1, v2,) => {...};
+func("t1", "t2",);
+</code></pre>
 <p>同时也支持对象字面量和数组字面量后的逗号.</p>
-<h3>SharedArrayBuffer 和 Atomics</h3>
-<p>WebWorkers 可以创建多线程程序, 使用 <code class="language-text">SharedArrayBuffer</code> 创建共享数组缓冲区, 使得多个 workers 和主线程之间可以共享数据.</p>
-<p>全局对象 <code class="language-text">Atomics</code> 提供了一组静态方法对 <code class="language-text">SharedArrayBuffer</code> 和 <code class="language-text">ArrayBuffer</code> 进行原子操作, 使得多个线程可以按规定顺序安全地读写同一位置的数据.</p>
+<h3 id="sharedarraybuffer-和-atomics" style="position:relative;"><a href="#sharedarraybuffer-%E5%92%8C-atomics" aria-label="sharedarraybuffer 和 atomics permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SharedArrayBuffer 和 Atomics</h3>
+<p>WebWorkers 可以创建多线程程序, 使用 <code>SharedArrayBuffer</code> 创建共享数组缓冲区, 使得多个 workers 和主线程之间可以共享数据.</p>
+<p>全局对象 <code>Atomics</code> 提供了一组静态方法对 <code>SharedArrayBuffer</code> 和 <code>ArrayBuffer</code> 进行原子操作, 使得多个线程可以按规定顺序安全地读写同一位置的数据.</p>
 <blockquote>
 <p>为了防止 Spectre 漏洞, 所有主流浏览器默认禁用 SharedArrayBuffer .</p>
 </blockquote>
-<h2>ES 2016</h2>
-<h3>求幂运算符 **</h3>
-<p><code class="language-text">let x = 2 ** 5;</code></p>
-<p>等价于 <code class="language-text">Math.pow(x, y)</code></p>
-<p>“幂等”运算符 <code class="language-text">**=</code> , 如:</p>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">let x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-x <span class="token operator">**=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token operator">//</span> 相当于x <span class="token operator">=</span> x <span class="token operator">**</span> <span class="token number">2</span></code></pre></div>
-<h3>Array.includes()</h3>
-<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">let arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span> <span class="token string">"2"</span><span class="token punctuation">,</span> <span class="token string">"3"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-arr<span class="token punctuation">.</span>includes<span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">//</span> true
-arr<span class="token punctuation">.</span>includes<span class="token punctuation">(</span><span class="token string">"4"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">//</span> false</code></pre></div>
-<h2>ES6 (ES2015)</h2>
-<h3>关键字和类型</h3>
+<h2 id="es-2016" style="position:relative;"><a href="#es-2016" aria-label="es 2016 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES 2016</h2>
+<h3 id="求幂运算符-" style="position:relative;"><a href="#%E6%B1%82%E5%B9%82%E8%BF%90%E7%AE%97%E7%AC%A6-" aria-label="求幂运算符  permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>求幂运算符 **</h3>
+<p><code>let x = 2 ** 5;</code></p>
+<p>等价于 <code>Math.pow(x, y)</code></p>
+<p>“幂等”运算符 <code>**=</code> , 如:</p>
+<pre><code class="language-python">let x = 5;
+x **= 2; // 相当于x = x ** 2
+</code></pre>
+<h3 id="arrayincludes" style="position:relative;"><a href="#arrayincludes" aria-label="arrayincludes permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array.includes()</h3>
+<pre><code class="language-python">let arr = ["1", "2", "3"];
+arr.includes("1");  // true
+arr.includes("4");  // false
+</code></pre>
+<h2 id="es6-es2015" style="position:relative;"><a href="#es6-es2015" aria-label="es6 es2015 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES6 (ES2015)</h2>
+<h3 id="关键字和类型" style="position:relative;"><a href="#%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E7%B1%BB%E5%9E%8B" aria-label="关键字和类型 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>关键字和类型</h3>
 <ul>
-<li><code class="language-text">let</code> 与 <code class="language-text">const</code> 声明</li>
+<li><code>let</code> 与 <code>const</code> 声明</li>
 <li>箭头函数</li>
 <li>
-<p><code class="language-text">for/of</code> 遍历可迭代的数据结构: Array, String, Map, NodeList 等</p>
+<p><code>for/of</code> 遍历可迭代的数据结构: Array, String, Map, NodeList 等</p>
 <ul>
-<li>区分 <code class="language-text">for/in</code> : 遍历所有可枚举属性, 适用于遍历 Object 属性</li>
+<li>区分 <code>for/in</code> : 遍历所有可枚举属性, 适用于遍历 Object 属性</li>
 </ul>
 </li>
-<li><code class="language-text">Map</code> 对象</li>
-<li><code class="language-text">Set</code> 对象</li>
-<li><code class="language-text">class</code> “面向对象”相关方法实现</li>
-<li><code class="language-text">Promise</code></li>
-<li><code class="language-text">Symbol</code> 基本类型</li>
+<li><code>Map</code> 对象</li>
+<li><code>Set</code> 对象</li>
+<li><code>class</code> "面向对象"相关方法实现</li>
+<li><code>Promise</code></li>
+<li><code>Symbol</code> 基本类型</li>
 </ul>
-<h3>Function</h3>
+<h3 id="function" style="position:relative;"><a href="#function" aria-label="function permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function</h3>
 <ul>
-<li>Function 参数默认值 <code class="language-text">function fn(x = 2){...}</code></li>
-<li>Function 剩余参数 <code class="language-text">function fn(a, b, ...others) {...}</code></li>
+<li>Function 参数默认值 <code>function fn(x = 2){...}</code></li>
+<li>Function 剩余参数 <code>function fn(a, b, ...others) {...}</code></li>
 </ul>
-<h3>String</h3>
+<h3 id="string" style="position:relative;"><a href="#string" aria-label="string permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String</h3>
 <ul>
-<li><code class="language-text">String.includes()</code></li>
-<li><code class="language-text">String.startsWith()</code> <code class="language-text">String.endsWith()</code></li>
+<li><code>String.includes()</code></li>
+<li><code>String.startsWith()</code> <code>String.endsWith()</code></li>
 </ul>
-<h3>Array</h3>
+<h3 id="array" style="position:relative;"><a href="#array" aria-label="array permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array</h3>
 <ul>
-<li><code class="language-text">Array.from()</code> 从具有长度或可迭代的对象创建数组, 如 Set, String 等</li>
-<li><code class="language-text">Array.keys()</code> 返回数组的索引迭代器</li>
-<li><code class="language-text">Array.find()</code> <code class="language-text">Array.findIndex()</code> 返回满足测试函数的第一个元素 / 元素索引.</li>
+<li><code>Array.from()</code> 从具有长度或可迭代的对象创建数组, 如 Set, String 等</li>
+<li><code>Array.keys()</code> 返回数组的索引迭代器</li>
+<li><code>Array.find()</code> <code>Array.findIndex()</code> 返回满足测试函数的第一个元素 / 元素索引.</li>
 </ul>
-<h3>Math</h3>
+<h3 id="math" style="position:relative;"><a href="#math" aria-label="math permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Math</h3>
 <ul>
-<li><code class="language-text">Math.trunc()</code> 截取整数部分</li>
-<li><code class="language-text">Math.sign()</code> 返回数字的符号, 取值: 1, -1, 0, -0, NaN, 传入参数会被隐式转换为数字.</li>
-<li><code class="language-text">Math.cbrt()</code> 立方根</li>
-<li><code class="language-text">Math.log2()</code> <code class="language-text">Math.log10()</code></li>
+<li><code>Math.trunc()</code> 截取整数部分</li>
+<li><code>Math.sign()</code> 返回数字的符号, 取值: 1, -1, 0, -0, NaN, 传入参数会被隐式转换为数字.</li>
+<li><code>Math.cbrt()</code> 立方根</li>
+<li><code>Math.log2()</code> <code>Math.log10()</code></li>
 </ul>
-<h3>Number</h3>
+<h3 id="number" style="position:relative;"><a href="#number" aria-label="number permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Number</h3>
 <ul>
-<li><code class="language-text">Number.EPSILON</code> 最小精度值, 两数之差小于此值可认为两数相等.</li>
-<li><code class="language-text">Number.MIN_SAFE_INTEGER</code> <code class="language-text">Number.MAX_SAFE_INTEGER</code> 安全整数范围</li>
-<li><code class="language-text">Number.isInteger()</code> <code class="language-text">Number.isSafeInteger()</code></li>
+<li><code>Number.EPSILON</code> 最小精度值, 两数之差小于此值可认为两数相等.</li>
+<li><code>Number.MIN_SAFE_INTEGER</code> <code>Number.MAX_SAFE_INTEGER</code> 安全整数范围</li>
+<li><code>Number.isInteger()</code> <code>Number.isSafeInteger()</code></li>
 </ul>
-<h3>Global Methods</h3>
+<h3 id="global-methods" style="position:relative;"><a href="#global-methods" aria-label="global methods permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global Methods</h3>
 <ul>
-<li><code class="language-text">isFinite()</code> 参数为 <code class="language-text">Infinity</code> 或 <code class="language-text">NaN</code> 是返回 <code class="language-text">false</code>, 其他情况为 <code class="language-text">true</code></li>
-<li><code class="language-text">isNaN()</code></li>
+<li><code>isFinite()</code> 参数为 <code>Infinity</code> 或 <code>NaN</code> 是返回 <code>false</code>, 其他情况为 <code>true</code></li>
+<li><code>isNaN()</code></li>
 </ul>
-<h3>Object</h3>
+<h3 id="object" style="position:relative;"><a href="#object" aria-label="object permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object</h3>
 <ul>
 <li>
-<p><code class="language-text">Object.entries()</code> 返回对象可枚举属性的键值对数组</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const o = { a: &quot;aa&quot;, b: 2 };
-console.log(Object.entries(o));  // [[&quot;a&quot;, &quot;aa&quot;], [&quot;b&quot;, 2]]</code></pre></div>
+<p><code>Object.entries()</code> 返回对象可枚举属性的键值对数组</p>
+<pre><code>const o = { a: "aa", b: 2 };
+console.log(Object.entries(o));  // [["a", "aa"], ["b", 2]]
+</code></pre>
 </li>
 </ul>
-<h3>JavaScript Modules</h3>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript modules - JavaScript | MDN</a></p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/cb0348da83085f341829f81b843fa542/d4bf4/profile-pic.avif 50w,/static/cb0348da83085f341829f81b843fa542/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/cb0348da83085f341829f81b843fa542/3faea/profile-pic.webp 50w,/static/cb0348da83085f341829f81b843fa542/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png" data-srcset="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png 50w,/static/cb0348da83085f341829f81b843fa542/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/cb0348da83085f341829f81b843fa542/d4bf4/profile-pic.avif 50w,/static/cb0348da83085f341829f81b843fa542/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/cb0348da83085f341829f81b843fa542/3faea/profile-pic.webp 50w,/static/cb0348da83085f341829f81b843fa542/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png" srcSet="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png 50w,/static/cb0348da83085f341829f81b843fa542/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><div><p><strong>佚树</strong> 的个人博客</p><p>关于前端、音乐与生活</p></div></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/http-3/">← <!-- -->HTTP之三：安全的HTTPS</a></li><li></li></ul></nav></main><footer><a href="https://www.github.com/hrayd/">github</a> · <a href="https://www.zhihu.com/people/artyhacker">zhihu</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/es6+/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-97863347e1e2ea8cfcbd.js"],"app":["/app-065bd1c7906a1152e68e.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f1bde5534fbdc04f234a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a61f5dba934ef8f22a44.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-a4be0f194c3fdbe3e336.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-97982a6270918782dbd4.js"]};/*]]>*/</script><script src="/polyfill-97863347e1e2ea8cfcbd.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-97982a6270918782dbd4.js" async=""></script><script src="/commons-05ebe9de21711bd0a6d1.js" async=""></script><script src="/app-065bd1c7906a1152e68e.js" async=""></script><script src="/framework-e954ed135b27c92e5196.js" async=""></script><script src="/webpack-runtime-b6b5473299e7c9f504ce.js" async=""></script></body></html>
+<h3 id="javascript-modules" style="position:relative;"><a href="#javascript-modules" aria-label="javascript modules permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JavaScript Modules</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript modules - JavaScript | MDN</a></p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/cb0348da83085f341829f81b843fa542/d4bf4/profile-pic.avif 50w,/static/cb0348da83085f341829f81b843fa542/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/cb0348da83085f341829f81b843fa542/3faea/profile-pic.webp 50w,/static/cb0348da83085f341829f81b843fa542/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png" data-srcset="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png 50w,/static/cb0348da83085f341829f81b843fa542/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/cb0348da83085f341829f81b843fa542/d4bf4/profile-pic.avif 50w,/static/cb0348da83085f341829f81b843fa542/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/cb0348da83085f341829f81b843fa542/3faea/profile-pic.webp 50w,/static/cb0348da83085f341829f81b843fa542/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png" srcSet="/static/cb0348da83085f341829f81b843fa542/e5610/profile-pic.png 50w,/static/cb0348da83085f341829f81b843fa542/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><div><p><strong>佚树</strong> 的个人博客</p><p>关于前端、音乐与生活</p></div></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/http-3/">← <!-- -->HTTP之三：安全的HTTPS</a></li><li></li></ul></nav></main><footer><a href="https://www.github.com/hrayd/">github</a> · <a href="https://www.zhihu.com/people/artyhacker">zhihu</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/es6+/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-97863347e1e2ea8cfcbd.js"],"app":["/app-6ee9d740e7016c9718ed.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f1bde5534fbdc04f234a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a61f5dba934ef8f22a44.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-a4be0f194c3fdbe3e336.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-97982a6270918782dbd4.js"]};/*]]>*/</script><script src="/polyfill-97863347e1e2ea8cfcbd.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-97982a6270918782dbd4.js" async=""></script><script src="/commons-05ebe9de21711bd0a6d1.js" async=""></script><script src="/app-6ee9d740e7016c9718ed.js" async=""></script><script src="/framework-e954ed135b27c92e5196.js" async=""></script><script src="/webpack-runtime-7448db38bbc0572cf7e1.js" async=""></script></body></html>
